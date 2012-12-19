@@ -1,0 +1,455 @@
+/*
+
+	zenlike1.0 by nodethirtythree design
+	http://www.nodethirtythree.com
+
+*/
+
+*
+{
+padding: 0em;
+margin: 0em;
+}
+
+body
+{
+padding: 35px 0px 35px 0px;
+}
+
+#menu ul li a:hover, #main_menu ul li a.selected{  
+    background: #77A346;  
+}
+
+body,input
+{
+font-size: 10pt;
+font-family: "georgia", "times new roman", serif;
+color: #333333;
+}
+
+#agregar_flotilla{
+    margin-bottom: 15px;
+}
+
+p
+{
+line-height: 1.5em;
+margin-bottom: 1.0em;
+text-align: justify;
+}
+
+a
+{
+color: #77A346;
+text-decoration: underline;
+}
+
+a:hover
+{
+text-decoration: none;
+}
+
+
+h3 span
+{
+font-weight: normal;
+}
+
+h3,h4
+{
+display: inline;
+font-weight: bold;
+background-repeat: no-repeat;
+background-position: right;
+}
+
+h3
+{
+font-size: 1.7em;
+padding-right: 34px;
+}
+
+h4
+{
+font-size: 1.2em;
+padding-right: 28px;
+}
+
+.contentarea
+{
+padding-top: 1.3em;
+width: 70%;
+}
+
+img
+{
+border: solid 1px #6F5230;
+}
+
+img.left
+{
+position: relative;
+float: left;
+margin: 0em 1.8em 1.4em 0em;
+}
+
+img.right
+{
+position: relative;
+float: right;
+margin: 0em 0em 1.8em 1.8em;
+}
+
+.divider1
+{
+position: relative;
+background: #fff url('images/border2.gif') repeat-x;
+height: 14px;
+margin: 2.0em 0em 1.5em 0em;
+clear: both;
+}
+
+.divider2
+{
+position: relative;
+height: 1px;
+border-bottom: solid 1px #eaeaea;
+margin: 2.0em 0em 2.0em 0em;
+}
+
+.box
+{
+position: relative;
+left: -1.5em;
+top: -1.5em;
+padding: 1.5em;
+border-bottom: solid 1px #86C288;
+margin-bottom: 1.0em;
+}
+.administative_options{
+    padding-bottom: 15px;
+}
+ul.linklist
+{
+list-style: none;
+}
+
+ul.linklist li
+{
+line-height: 2.0em;
+}
+
+#upbg
+{
+position: absolute;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 275px;
+z-index: 1;
+}
+
+#outer
+{
+z-index: 2;
+position: relative;
+width: 70%;
+border: solid 7px #fff;
+background-color: #fff;
+margin: 0 auto;
+}
+
+#header
+{
+position: relative;
+width: 100%;
+height: 9.0em;
+background: url('images/topbg.gif') repeat-x;
+margin-bottom: 5px;
+border-radius: 15px;
+}
+
+#headercontent #logo{
+    float:left;    
+    padding-right: 20px;
+}
+
+#headercontent #logo img{
+    width: 210px;
+    height: 87px;
+}
+
+#headercontent
+{
+position: absolute;
+bottom: 0em;
+padding: 0em 2.0em 1.3em 2.0em;
+}
+
+#headercontent h1
+{
+font-weight: normal;
+font-size: 2.5em;
+float: right;
+}
+
+#headercontent h1 sup
+{
+color: #777;
+}
+
+#headercontent h2
+{
+font-size: 1.0em;
+font-weight: normal;
+color: #aaa;
+}
+
+#search
+{
+position: absolute;
+top: 5.5em;
+right: 2.0em;
+padding-right: 0.0em;
+}
+
+#search input.text
+{
+margin-right: 0.5em;
+vertical-align: middle;
+border-top: solid 1px #000000;
+border-right: 0px;
+border-bottom: solid 1px #777777;
+border-left: 0px;
+padding: 0.15em;
+width: 10.0em;
+}
+
+#search input.submit
+{
+background: #939B00 url('images/buttonbg.gif') repeat-x;
+border: solid 1px #5F6800;
+font-weight: bold;
+padding: 0.25em;
+font-size: 0.8em;
+color: #F2F3DE;
+vertical-align: middle;
+}
+
+#headerpic
+{
+position: relative;
+height: 450px;
+background: #fff url('images/hdrpic.jpg') no-repeat top left;
+margin-bottom: 12px;
+}
+
+#menu
+{
+position: relative;
+height: 3.5em;
+padding: 0em 1.0em 0em 1.0em;
+margin-bottom: 2px;
+}
+
+#menu ul
+{
+position: absolute;
+top: 1.1em;
+}
+
+#menu ul li
+{
+position: relative;
+display: inline;
+}
+
+#menu ul li a
+{
+padding: 0.5em 1.7em 0.9em 1.0em;
+color: #000000;
+text-decoration: none;
+}
+
+#menu ul li a:hover
+{
+text-decoration: underline;
+}
+
+#menu ul li a.active
+{
+background: #7F8400 url('images/menuactive.gif') repeat-x top left;
+}
+
+#menubottom
+{
+background: #fff url('images/border1.gif') repeat-x;
+height: 14px;
+}
+
+#content
+{
+padding: 0em 2.0em 0em 2.0em;
+}
+
+#content fieldset{
+    border:none;
+}
+
+#primarycontaine, 
+#content .user_register_form, 
+#content .add_company_info_form, 
+#content #contact_us_form, 
+#content .add_company_info_form,
+#content .user_login_form,
+#content #primarycontent,
+#content #delete_user_form,
+#content .change_company_info_form,
+#content .new_gallery_form,
+#content #status_user_registrations,
+#content #codes,
+#content #add_ceeb_code_form,
+#content #edit_ceeb_code_form,
+#content #lookup,
+#content #our_service,
+#content #mudanzas,
+#content #sugerencia_mudanza,
+#content #nuestra_flotilla
+{
+    float: left;
+    margin-right: -18.0em;
+    width: 65%;
+    margin-bottom: 20px;
+}
+
+#content #add_flotilla
+{
+    margin-top: 400px;
+    margin-right: -18.0em;
+    width: 65%;
+    margin-bottom: 20px;
+}
+#current_user_registered_logout a {
+    text-decoration: none;
+}
+ 
+#mudanzas textarea{
+    font-size: 10pt;
+    font-family: "georgia", "times new roman", serif;
+    color: #333;
+    background-color: white;
+    border: none;
+}
+
+#mudanzas_title {
+    margin-bottom: 15px;
+}
+
+#our_service_title {
+    margin-bottom: 15px;
+}
+
+#sugerencia_mudanza_title {
+    margin-bottom: 15px;
+}
+
+#sugerencia_mudanza textarea{
+    font-size: 10pt;
+    font-family: "georgia", "times new roman", serif;
+    color: #333;
+    background-color: white;
+    border: none;
+}
+#our_service textarea{
+    font-size: 10pt;
+    font-family: "georgia", "times new roman", serif;
+    color: #333;
+    background-color: white;
+    border: none;
+}
+
+#content .add_company_info_form, .new_company_field, #content .change_company_info_form, .new_company_field{
+    margin-bottom: 20px;
+}
+
+#add_ceeb_code_form #update_code{
+    width: 60px;
+    margin: 20px 0px 0px 115px;
+}
+
+#add_ceeb_code_form #update_code button{
+    width: 100%;
+}
+
+#edit_ceeb_code_form #edit_code{
+    width: 60px;
+    margin: 20px 0px 0px 115px;
+}
+
+#edit_ceeb_code_form #edit_code button{
+    width: 100%;    
+}
+
+#codes #add_new_code {
+    width: 60px;
+    margin: 20px 0px 0px 115px;
+}
+
+#codes #add_new_code button{
+    width: 100%;
+}
+
+
+#content #gallery_form
+{
+    float: left;
+    margin-right: -18.0em;
+    width: 100%;
+    height: 600px;
+}
+
+#content #gallery_form #gallery_name {
+    margin-bottom: 20px;
+}
+
+#content .add_company_info_form #company_name_title {
+    padding-bottom: 20px;
+}
+
+#primarycontent
+{
+    margin: 1.5em 22.0em 0em 0em;
+}
+
+#secondarycontent
+{
+margin-top: 1.5em;
+float: right;
+width: 18.0em;
+margin-bottom: 2em;
+}
+
+#footer
+{
+position: relative;
+clear: both;
+padding-top: 5.0em;
+background: url('images/topbg.gif') repeat-x;
+font-size: 0.8em;
+border-radius: 15px;
+}
+
+#footer .left
+{
+position: absolute;
+left: 2.0em;
+bottom: 1.7em;
+}
+
+#footer .right
+{
+position: absolute;
+right: 2.0em;
+bottom: 1.7em;
+}
+over{ color: #0078CF}
