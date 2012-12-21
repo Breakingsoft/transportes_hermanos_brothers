@@ -11,9 +11,9 @@ Date: July 29, 2010
 
 */
 
-#sliderContainer { width: 940px; height: 300px; position: relative; border-top: 5px solid #999; border-bottom: 5px solid #999; margin: 0 auto; }
+#sliderContainer { width: 430px; height: 300px; position: relative; border-top: 5px solid #999; border-bottom: 5px solid #999; margin: 0 auto; }
 
-.slideContent {  background:url("images/slider/contentBg.png") repeat scroll 0 0 transparent; position: absolute; bottom:0px; right:0px; padding: 10px; width: 920px; }
+.slideContent {  background:url("images/slider/contentBg.png") repeat scroll 0 0 transparent; position: absolute; bottom:0px; padding: 10px; width: 410px; }
 
 .slide h3 {  font: 26px/1em 'Rokkitt', serif; color: #FFF;  margin: 0 0 5px 0; }
 

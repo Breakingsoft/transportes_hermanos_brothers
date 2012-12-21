@@ -236,14 +236,14 @@ class Controller_Static extends Controller_Main{
             
             if($_POST['image_options']=='Hero'){
                 
-                $width = 920;
-                $height = 324;
+                $width = 800;
+                $height = 330;
                 $as_hero = 'Y';
 
             } else {
                   
-                $width = 560;
-                $height = 310;
+                $width = 380;
+                $height = 280;
                 $as_hero = 'N';
                 
             }  
@@ -372,7 +372,7 @@ class Controller_Static extends Controller_Main{
                     $gallery_model = new Model_gallery;
                     $get_gid = $gallery_model->get_gid('Principal');
                     
-                    $save_flotilla_name = $this->_save_image($_FILES['vehiculo_imagen'], 940, 300);
+                    $save_flotilla_name = $this->_save_image($_FILES['vehiculo_imagen'], 430, 300);
 
                         $add_fileManaged_model = new Model_fileManaged;
                         $file_info = array(
