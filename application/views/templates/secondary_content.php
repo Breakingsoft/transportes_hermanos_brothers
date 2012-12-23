@@ -41,10 +41,16 @@
                         </ul>
                     <?php } else { ?>
                         <ul>
+                            <h5>Mantenimiento de imagenes</h5>
                             <li><a href="<?php echo URL::base(); ?>static/add_gallery">Nueva imagen</a></li>
+                            <li><a href="<?php echo URL::base(); ?>static/delete_image">Eliminar imagen</a></li>
+                            <br>
+                            <h5>Mantenimiento de usuarios</h5>
                             <li><a href="<?php echo URL::base(); ?>static/register">nuevo usuario</a></li>
+                            <li><a href="<?php echo URL::base(); ?>static/delete_user">Eliminar usuario</a></li>
+                            <br>
+                            <h5>Mantenimiento de nuestra información</h5>
                             <li><a href="<?php echo URL::base(); ?>static/change_site_information">Modificar informacion de la compañía</a></li>
-                            <li><a href="<?php echo URL::base(); ?>static/delete_user">Eliminar usiario</a></li>
                         </ul>
                         <?php } ?>    
                     <?php } ?>

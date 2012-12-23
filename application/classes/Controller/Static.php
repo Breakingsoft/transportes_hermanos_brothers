@@ -406,5 +406,22 @@ class Controller_Static extends Controller_Main{
                  }
         
     }
+    
+    public function action_delete_image(){
+        
+        $file_managed_model = new Model_fileManaged;
+        $get_all_images_by_name = $file_managed_model->get_all_images_by_name();
+        
+        $content = View::factory('pages/delete_image')
+                ->bind('images', $get_all_images_by_name);
+        $this->template->content = $content;
+        
+        if ($_POST){
+            $file_managed_model = new Model_fileManaged;
+            $delete_image = $file_managed_model->delete_image($_POST['images']);
+            
+            $this->redirect('static/delete_image');
+        }
+    }
 
 }

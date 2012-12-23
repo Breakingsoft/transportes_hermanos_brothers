@@ -68,7 +68,7 @@
                 echo '</div>';
             echo '</div>';
             
-             echo '<div id="turismo" class="new_company_field">';
+             echo '<div id="turismo_field" class="new_company_field">';
                 echo '<div>';
                 echo Form::label('turismo','Servicio de turismo:');
                 echo '</div>';

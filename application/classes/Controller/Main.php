@@ -32,7 +32,7 @@
             $this->template->stylesheet = array('template', 'nivo-slider', 'slider', 'dark', 'jflow.style');
             
             // Asginamos el archivo javascript
-            $this->template->javascript = array('jquery-1.7.1.min','user_validation', 'jquery.nivo.slider','script_slider','jflow.plus.min');
+            $this->template->javascript = array('jquery-1.7.1.min','user_validation', 'jquery.nivo.slider','script_slider','jflow.plus.min', 'functions');
         }
        public function after(){
             //code here

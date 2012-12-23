@@ -79,4 +79,18 @@ class Model_fileManaged {
         return $get_last_fid;
     }
     
+    public function get_all_images_by_name(){
+        $get_all_images_by_name = DB::select('file_name')
+                ->from($this->_file_managed)
+                ->execute()
+                ->as_array();
+        return $get_all_images_by_name;
+    } 
+    
+    public function delete_image($file_name){
+        $delete_image = DB::delete($this->_file_managed)
+                ->where('file_name', '=', $file_name)
+                ->execute();
+        return $delete_image;
+    }
 }
