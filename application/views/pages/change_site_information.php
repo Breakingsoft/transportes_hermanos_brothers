@@ -68,6 +68,15 @@
                 echo '</div>';
             echo '</div>';
             
+             echo '<div id="turismo" class="new_company_field">';
+                echo '<div>';
+                echo Form::label('turismo','Servicio de turismo:');
+                echo '</div>';
+                echo '<div>';
+                echo Form::textarea('turismo_info', $site_information_data['turismo_info'], array('required'=>TRUE));
+                echo '</div>';
+            echo '</div>';
+            
             echo '<div id="phones" class="new_company_field">';
                 echo '<div id="phone_1">';
                 echo '<div>';

@@ -4,7 +4,7 @@
  
         public function before(){
             parent::before();
-            
+
             //obtener la informacion de la compañia
             $company = new Model_companyInfo;
             $get_company_info = $company->get_company_info();

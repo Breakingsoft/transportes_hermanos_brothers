@@ -56,6 +56,7 @@ class Model_fileManaged {
                 ->from($this->_file_managed)
                 ->where('gid','=',$gid)
                 ->and_where('type', '=', 'Cliente')
+                ->and_where('as_hero', '=', 'N')
                 ->execute()
                 ->as_array();
         return $get_all_images_by_gallery;

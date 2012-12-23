@@ -40,7 +40,7 @@ class Model_companyInfo {
         $valores['6'] = $data_encrypt->encode($valores['6']);
         $valores['7'] = $data_encrypt->encode($valores['7']);
         
-        $columnas = array('name','id', 'mudanzas', 'sugerencia_mudanza', 'phone_1', 'phone_2', 'email_1', 'email_2', 'about_us', 'logo_image_id', 'address', 'our_service');
+        $columnas = array('name','id', 'mudanzas', 'sugerencia_mudanza', 'phone_1', 'phone_2', 'email_1', 'email_2', 'about_us', 'logo_image_id', 'address', 'our_service','turismo_info');
         $add_company_info = DB::insert($this->_company_info, $columnas)
                 ->values($valores)
                 ->execute();
@@ -64,7 +64,8 @@ class Model_companyInfo {
                             'email_2'=>$valores['email_2'],
                             'about_us'=>$valores['about_us'],
                             'our_service'=>$valores['our_service'],
-                            'address'=>$valores['address']))
+                            'address'=>$valores['address'],
+                            'turismo_info' =>$valores['turismo_info']))
                 ->execute();
         return $add_company_info;
     }
@@ -85,6 +86,13 @@ class Model_companyInfo {
     
     public function get_sugerencia_mudanza(){
         return $get_nuestros_servicios = DB::select('sugerencia_mudanza')
+                ->from($this->_company_info)
+                ->execute()
+                ->as_array();
+    }
+    
+     public function get_turismo_info(){
+        return $get_nuestros_servicios = DB::select('turismo_info')
                 ->from($this->_company_info)
                 ->execute()
                 ->as_array();

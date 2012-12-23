@@ -51,7 +51,7 @@ class Controller_Static extends Controller_Main{
                         
                         $logo_id = $add_fileManaged_model->get_logo_id('logo');
 
-                        $company_info = array($_POST['name'], $_POST['company_id'], $_POST['mudanzas'], $_POST['sugerencia_mudanza'], $_POST['phone_1'], $_POST['phone_2'], $_POST['email_1'], $_POST['email_2'], $_POST['about_us'], $logo_id, $_POST['address'], $_POST['our_service']);
+                        $company_info = array($_POST['name'], $_POST['company_id'], $_POST['mudanzas'], $_POST['sugerencia_mudanza'], $_POST['phone_1'], $_POST['phone_2'], $_POST['email_1'], $_POST['email_2'], $_POST['about_us'], $logo_id, $_POST['address'], $_POST['our_service'], $_POST['turismo_info']);
                         $add_company_info_model = new Model_companyInfo;
                         $add_company_info = $add_company_info_model->add_company_info($company_info);
                         
@@ -300,7 +300,8 @@ class Controller_Static extends Controller_Main{
                                   'email_1'=>$_POST['email_1'],
                                   'email_2'=>$_POST['email_2'],
                                   'address'=>$_POST['address'],
-                                  'our_service'=>$_POST['our_service']);
+                                  'our_service'=>$_POST['our_service'],
+                                  'turismo_info' =>$_POST['turismo_info']);
             
             $company_info_model = new Model_companyInfo;
             $update_company_info = $company_info_model->update_company_info($company_data);
@@ -355,6 +356,16 @@ class Controller_Static extends Controller_Main{
         
         $content = View::factory('pages/sugerencia_mudanza')
                 ->bind('sugerencia_mudanza',$get_sugerencia_mudanza);
+        $this->template->content = $content;
+        
+    }
+    
+    public function action_turismo(){
+        $company_info = new Model_companyInfo;
+        $get_turismo_info = $company_info->get_turismo_info();
+        
+        $content = View::factory('pages/turismo')
+                ->bind('turismo_info',$get_turismo_info);
         $this->template->content = $content;
         
     }

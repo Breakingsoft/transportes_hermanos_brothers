@@ -6,7 +6,7 @@
        <li><a href="<?php echo URL::base(); ?>static/nuestra_flotilla">Flotilla</a></li>
        <li><a href="<?php echo URL::base(); ?>static/sugerencia_mudanza">Sugerencias</a></li>
        <li><a href="<?php echo URL::base(); ?>static/gallery">Portafolio de clientes</a></li>
-       <li><a href="<?php echo URL::base(); ?>static/contact">Turismo</a></li>
+       <li><a href="<?php echo URL::base(); ?>static/turismo">Turismo</a></li>
        <li><a href="<?php echo URL::base(); ?>static/contact">Contactanos</a></li>
     </ul>
 </div>

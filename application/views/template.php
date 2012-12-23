@@ -2,7 +2,7 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
         <?php foreach($company_info as $company_info_data): ?>
-        <title><?php echo $company_info['name']?></title>
+        <title><?php echo $company_info_data['name']?></title>
         <?php endforeach; ?>
         <?php foreach ($stylesheet as $style): ?>
         <link rel="stylesheet" href="<?php echo URL::base().'media/css/'.$style?>.css" type="text/css" media="screen">
